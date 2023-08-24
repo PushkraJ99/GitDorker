@@ -145,17 +145,17 @@ def api_search(url):
     if args.dorks:  # UNDO COMPLETE! :)
         if args.keyword:
             sys.stdout.write(colored(
-                '\r[#] $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ Dorking with Keyword In Progress $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ %d/%d\r' % (stats_dict['n_current'], stats_dict['n_total_urls']),
+                '\r[#] $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ Dorking with Keyword In Progress $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ %d/%d\r' % (stats_dict['n_current'], stats_dict['n_total_urls']),
                 "green"))
             sys.stdout.flush()
         else:
             sys.stdout.write(
-                colored('\r[#] $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ Dorking In Progress $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$  %d/%d\r' % (stats_dict['n_current'], stats_dict['n_total_urls']), "green"))
+                colored('\r[#] $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ Dorking In Progress $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$  %d/%d\r' % (stats_dict['n_current'], stats_dict['n_total_urls']), "green"))
             sys.stdout.flush()
 
     elif args.keyword and not args.dorks:
         sys.stdout.write(
-            colored('\r[#] $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ Keyword Search In Progress $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ %d/%d\r' % (stats_dict['n_current'], stats_dict['n_total_urls']),
+            colored('\r[#] $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ Keyword Search In Progress $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ %d/%d\r' % (stats_dict['n_current'], stats_dict['n_total_urls']),
                     "green"))
         sys.stdout.flush()
 
@@ -170,7 +170,7 @@ def api_search(url):
                 for remaining in range(63, 0, -1):
                     sys.stdout.write("\r")
                     sys.stdout.write(colored(
-                        "\r[#] (-_-)zzZZzzZZzzZZzzZZ sleeping to avoid rate limits. GitDorker will resume soon (-_-)zzZZzzZZzzZZzzZZ | {:2d} seconds remaining.\r".format(
+                        "\r[#] (-_-)zzZZzzZZz sleeping to avoid rate limits. GitDorker will resume soon (-_-)zzZZzzZZz | {:2d} seconds remaining.\r".format(
                             remaining), "blue"))
                     sys.stdout.flush()
                     time.sleep(1)
@@ -179,7 +179,7 @@ def api_search(url):
                 for remaining in range(63, 0, -1):
                     sys.stdout.write("\r")
                     sys.stdout.write(colored(
-                        "\r[#] (-_-)zzZZzzZZzzZZzzZZ sleeping to avoid rate limits. GitDorker will resume soon (-_-)zzZZzzZZzzZZzzZZ | {:2d} seconds remaining.\r".format(
+                        "\r[#] (-_-)zzZZzzZZz sleeping to avoid rate limits. GitDorker will resume soon (-_-)zzZZzzZZz | {:2d} seconds remaining.\r".format(
                             remaining), "blue"))
                     sys.stdout.flush()
                     time.sleep(1)
