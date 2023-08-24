@@ -3,19 +3,18 @@
 # Credits: Modified GitHub Dorker using GitAPI and my personal compiled list of dorks across multiple resources. API Request structure modeled and modified and modified from Gwendal Le Coguic's scripts.
 # Author: Omar Bheda
 # Version: 1.1.3
-print("""
+print("""\033[91m\033[93m
 
+ $$$$$$\  $$\   $$\           $$$$$$$\                      $$\                           
+$$  __$$\ \__|  $$ |          $$  __$$\                     $$ |                          
+$$ /  \__|$$\ $$$$$$\         $$ |  $$ | $$$$$$\   $$$$$$\  $$ |  $$\  $$$$$$\   $$$$$$\  
+$$ |$$$$\ $$ |\_$$  _|        $$ |  $$ |$$  __$$\ $$  __$$\ $$ | $$  |$$  __$$\ $$  __$$\ 
+$$ |\_$$ |$$ |  $$ |          $$ |  $$ |$$ /  $$ |$$ |  \__|$$$$$$  / $$$$$$$$ |$$ |  \__|
+$$ |  $$ |$$ |  $$ |$$\       $$ |  $$ |$$ |  $$ |$$ |      $$  _$$<  $$   ____|$$ |      
+\$$$$$$  |$$ |  \$$$$  |      $$$$$$$  |\$$$$$$  |$$ |      $$ | \$$\ \$$$$$$$\ $$ |      
+ \______/ \__|   \____/       \_______/  \______/ \__|      \__|  \__| \_______|\__|      
 
-  /$$$$$$  /$$   /$$           /$$$$$$$                      /$$
- /$$__  $$|__/  | $$          | $$__  $$                    | $$
-| $$  \__/ /$$ /$$$$$$        | $$  \ $$  /$$$$$$   /$$$$$$ | $$   /$$  /$$$$$$   /$$$$$$
-| $$ /$$$$| $$|_  $$_/        | $$  | $$ /$$__  $$ /$$__  $$| $$  /$$/ /$$__  $$ /$$__  $$
-| $$|_  $$| $$  | $$          | $$  | $$| $$  \ $$| $$  \__/| $$$$$$/ | $$$$$$$$| $$  \__/
-| $$  \ $$| $$  | $$ /$$      | $$  | $$| $$  | $$| $$      | $$_  $$ | $$_____/| $$
-|  $$$$$$/| $$  |  $$$$/      | $$$$$$$/|  $$$$$$/| $$      | $$ \  $$|  $$$$$$$| $$
- \______/ |__/   \___/        |_______/  \______/ |__/      |__/  \__/ \_______/|__/
-
-
+                                                                                          
 Find GitHub secrets utilizing a vast list of GitHub dorks and the GitHub search api. The
 purpose of this tool is to enumerate interesting users,repos, and files to provide an
 easy to read overview of where a potential sensitive information exposure may reside.
