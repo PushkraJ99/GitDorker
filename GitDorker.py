@@ -14,7 +14,7 @@ $$ |  $$ |$$ |  $$ |$$\       $$ |  $$ |$$ |  $$ |$$ |      $$  _$$<  $$   ____|
 \$$$$$$  |$$ |  \$$$$  |      $$$$$$$  |\$$$$$$  |$$ |      $$ | \$$\ \$$$$$$$\ $$ |      
  \______/ \__|   \____/       \_______/  \______/ \__|      \__|  \__| \_______|\__|      
 
-                                                                                          
+                                                                                        
 Find GitHub secrets utilizing a vast list of GitHub dorks and the GitHub search api. The
 purpose of this tool is to enumerate interesting users,repos, and files to provide an
 easy to read overview of where a potential sensitive information exposure may reside.
@@ -175,7 +175,7 @@ def api_search(url):
                     sys.stdout.flush()
                     time.sleep(1)
         else:
-            if stats_dict['n_current'] % 29 == 0:
+            if stats_dict['n_current'] % 4 == 0:
                 for remaining in range(63, 0, -1):
                     sys.stdout.write("\r")
                     sys.stdout.write(colored(
